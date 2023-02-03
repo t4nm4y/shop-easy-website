@@ -1,0 +1,131 @@
+.loader{
+  position: absolute;
+  top: 26vh;
+  margin-left:50vw;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.home {
+  position: relative;
+  background-color: var(--color-gray-300);
+  min-height: 100vh;
+  height: 100%;
+  overflow: hidden;
+}
+.bg {
+  position:absolute;
+  background-color: var(--color-gray-300);
+  height: 100%;
+  overflow: hidden;
+}
+.container{
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 350px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,0fr));
+  grid-gap: 30px;
+  -ms-grid-row-align: stretch;
+  box-sizing: border-box;
+}
+
+.homeChild,
+.homeItem {
+  position: absolute;
+  top: 0;
+}
+.homeChild {
+  right: 0;
+  width: 498.25px;
+  height: 942.72px;
+}
+.homeItem {
+  left: 0;
+  width: 1154.75px;
+  height: 504.81px;
+}
+
+.searchArea,
+.searchIcon {
+  border: 0;
+  background-color: transparent;
+  align-self: stretch;
+}
+.searchArea {
+  font-family: var(--font-outfit);
+  font-size: var(--font-size-xs);
+  font-weight:lighter;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-xs) var(--padding-lg);
+  align-items: flex-start;
+  justify-content: space-between;
+  outline-width: 0;
+  color: #fff;
+  outline: none;
+}
+.searchIcon {
+  cursor: pointer;
+  padding-top: 0;
+  position: relative;
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+  background-image: url(../../public/searchicon@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  mix-blend-mode: normal;
+  margin-top: 5px;
+}
+
+
+
+.searchBar {
+  position: absolute;
+  top: 183px;
+  left: calc(50% - 185px);
+  border-radius: var(--br-lg);
+  background-color: var(--color-turquoise-200);
+  width: 450px;
+  height: 39px;
+  display: flex;
+  flex-direction: row;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-sm);
+  
+}
+
+@media screen and (max-width: 750px) {
+  .name{
+    left: 40px;
+  }
+  .searchBar {
+    width: 400px;
+    padding-left: 60px;
+  }
+  .searchIcon{
+    left: -40px;
+  }
+}
+@media screen and (max-width: 420px) {
+  
+  .searchBar {
+    width: 350px;
+    padding-left: 88px;
+    left: calc(50% - 180px);
+  }
+  .searchIcon{
+    left: -75px;
+  }
+}

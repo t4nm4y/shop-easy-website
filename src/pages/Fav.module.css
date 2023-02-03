@@ -1,0 +1,147 @@
+/* common items: */
+.container{
+  width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 250px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,0fr));
+  grid-gap: 30px;
+  box-sizing: border-box;
+}
+
+.bg {
+  position: absolute;
+  background-color: var(--color-gray-300);
+  width:100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+.favChild,
+.favItem {
+  position: absolute;
+  top: 0;
+}
+.favChild {
+  right: 0;
+  width: 498.25px;
+  height: 942.72px;
+}
+.favItem {
+  left: 0;
+  width: 1154.75px;
+  height: 504.81px;
+}
+
+.favourites,
+.home {
+  cursor: pointer;
+  top: 33px;
+}
+.home {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 33px;
+  right: 130px;
+  font-size: var(--font-size-base);
+  font-family: var(--font-outfit);
+  color: var(--color-white);
+  text-align: center;
+  display: inline-block;
+  mix-blend-mode: normal;
+}
+.home:hover {
+  text-shadow: 0 3px 4px rgba(255, 255, 255, 0.3);
+}
+.favourites {
+  left: calc(50% - 94px);
+  font-size: 180%;
+}
+.favourites,
+.heart1Icon,
+.name {
+  position: absolute;
+  mix-blend-mode: normal;
+}
+.heart1Icon {
+  top: 33px;
+  left: calc(50% + 42px);
+  width: 53px;
+  height: 46.95px;
+  object-fit: cover;
+}
+.name {
+  top: 33px;
+  left: 130px;
+  font-size: var(--font-size-base);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 215px;
+}
+.fav {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  overflow: hidden;
+  color: var(--color-white);
+  font-family: var(--font-outfit);
+}
+
+/* responsiveness */
+@media screen and (max-width: 420px) {
+  .home {
+    display: none;
+  }
+  .heart1Icon {
+    width: 53px;
+  }
+  .name {
+    display: none;
+  }
+  .searchBar {
+    width: 200px;
+    padding-left: 70px;
+  }
+  .searchIcon{
+    left: -45px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .home,
+  .name {
+    display: none;
+  }
+  .searchBar {
+    width: 400px;
+    padding-left: 60px;
+  }
+  .searchIcon{
+    left: -40px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .home {
+    display: none;
+  }
+  .heart1Icon {
+    width: 53px;
+  }
+  .name {
+    display: none;
+  }
+  .searchBar {
+    width: 350px;
+    padding-left: 88px;
+    left: calc(50% - 180px);
+  }
+  .searchIcon{
+    left: -75px;
+  }
+}

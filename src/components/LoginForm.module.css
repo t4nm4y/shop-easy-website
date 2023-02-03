@@ -1,0 +1,144 @@
+.error{
+  position: relative;
+  top: 400px;
+  font-size: 50%;
+  color: red;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.userid {
+  border: 0;
+  font-size: var(--font-size-xs);
+  background-color: var(--color-gray-100);
+  top: 0;
+  left: 0;
+  border-radius: var(--br-sm);
+  width: 301px;
+  height: 39px;
+  color: #fff;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  outline: none;
+}
+
+
+.pswd,
+.userid {
+  position: absolute;
+  font-family: var(--font-outfit);
+}
+.pswd {
+  border: 0;
+  font-size: var(--font-size-xs);
+  background-color: var(--color-gray-100);
+  top: 70px;
+  left: 0;
+  border-radius: var(--br-sm);
+  width: 301px;
+  height: 39px;
+  color: #fff;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  outline: none;
+}
+
+.btnTxt {
+  top: 4px;
+  left: 15px;
+  font-size: 120%;
+  text-align: center;
+  mix-blend-mode: normal;
+}
+
+.signupWrapper {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color:rgba(255, 255, 255, 0.904);
+  position: absolute;
+  top: 136px;
+  right: -0.5px;
+  border-radius: var(--br-sm);
+  width: 112px;
+  height: 40px;
+}
+
+.loginWrapper {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.904);
+  position: absolute;
+  top: 325px;
+  right: -0.5px;
+  border-radius: var(--br-sm);
+  width: 112px;
+  height: 40px;
+}
+
+.or {
+  top: 195px;
+  left: 129px;
+  font-size: var(--font-size-base);
+  font-family: var(--font-outfit);
+  color: var(--color-white);
+}
+.alreadyUsr,
+.continueWithGoogle,
+.gIcon,
+.or {
+  position: absolute;
+  mix-blend-mode: normal;
+}
+.gIcon {
+  top: calc(50% - 14px);
+  left: calc(50% - 142.5px);
+  width: 31px;
+  height: 32px;
+  object-fit: cover;
+}
+.continueWithGoogle {
+  top: calc(50% - 16px);
+  left: calc(50% - 98.5px);
+  font-size: var(--font-size-sm);
+  font-family: var(--font-outfit);
+  color: var(--color-gray-200);
+  text-align: center;
+}
+
+.foreground,
+.google {
+  position: absolute;
+  width: 301px;
+}
+.google {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-gray-500);
+  top: 260px;
+  left: 0;
+  border-radius: var(--br-sm);
+  height: 40px;
+}
+
+.signupWrapper:hover,
+.loginWrapper:hover,
+.google:hover {
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+.alreadyUsr{
+  top: 330px;
+  font-size:50%;
+  font-family: var(--font-outfit);
+  color: var(--color-white);
+}
+.foreground {
+  top: calc(50% - 144px);
+  left: calc(50% - 150.5px);
+  height: 400px;
+}
+

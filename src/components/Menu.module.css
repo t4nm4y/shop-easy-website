@@ -1,0 +1,89 @@
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.logout,
+.about,
+.login {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: calc(50% - 146.5px);
+  left: calc(50% - 40.5px);
+  font-size: var(--font-size-base);
+  font-family: var(--font-outfit);
+  color: var(--color-white);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 82px;
+  height: 39px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  mix-blend-mode: normal;
+}
+.login {
+  top: calc(50% - 90.5px);
+  width: 74px;
+}
+.frameChild {
+  position: absolute;
+  top: 0;
+  left: 7px;
+  border-radius: var(--br-md);
+  filter: blur(2px);
+  border: 1px solid var(--color-white);
+  box-sizing: border-box;
+  width: 55px;
+  height: 49px;
+}
+.heart1,
+.rectangleParent {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+}
+.heart1 {
+  top: 6px;
+  left: calc(50% - 22px);
+  width: 45px;
+  height: 38.95px;
+  background-image: url(../../public/heart-1@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  mix-blend-mode: normal;
+}
+.rectangleParent {
+  top: calc(50% - 23.5px);
+  left: calc(50% - 33.5px);
+  width: 68px;
+  height: 51px;
+}
+.menu {
+  position: relative;
+  border-radius: var(--br-sm) 0 0 var(--br-sm);
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: -1px 3px 5px rgba(0, 0, 0, 0.25);
+  width: 133px;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  max-width: 90%;
+}
+.logout{
+  display:none;
+}
+.menu.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-right;
+}

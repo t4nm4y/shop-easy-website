@@ -1,0 +1,129 @@
+
+.name {
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+.name {
+  font-size: var(--font-size-base);
+  font-family: var(--font-outfit);
+  color: var(--color-white);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 215px;
+  mix-blend-mode: normal;
+}
+.heartChild {
+  border-radius: var(--br-md);
+  filter: blur(2px);
+  border: 1px solid var(--color-teal);
+  box-sizing: border-box;
+  width: 55px;
+  height: 49px;
+}
+.login,
+.heart,
+.heart1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+}
+.heart1 {
+  position: absolute;
+  top: 5px;
+  left: calc(50% - 22.5px);
+  width: 45px;
+  height: 45px;
+  background-image: url(../../public/heart1@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  mix-blend-mode: normal;
+}
+.login,
+.heart {
+  position: relative;
+}
+.heart {
+  width: 55px;
+  height: 49px;
+  flex-shrink: 0;
+}
+.login {
+  font-size: var(--font-size-base);
+  font-family: var(--font-outfit);
+  color: var(--color-white);
+  /* text-align: center; */
+  display: inline-block;
+  mix-blend-mode: normal;
+}
+.login:hover {
+  top: 0%;
+  transition: .3s;
+  transform: scale(1.2);
+}
+.links {
+  position: absolute;
+  top: -7px;
+  right: 66px;
+  height: 49px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-lg);
+}
+.hamburgerMenuDark1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 11px;
+  right: 0;
+  width: 46px;
+  height: 46px;
+  background-image: url(../../public/hamburgermenudark1@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: none;
+}
+.nav {
+  position: absolute;
+  width: calc(100% - 203px);
+  top: 33px;
+  right: 73px;
+  left: 130px;
+  height: 50px;
+}
+
+.logout{
+  display:none;
+}
+@media screen and (max-width: 750px) {
+  .name{
+    left: -50px;
+  }
+  .links {
+    display: none;
+  }
+  .hamburgerMenuDark1 {
+    display: flex;
+    right: -20px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .name{
+    left: -100px;
+  }
+  .links {
+    display: none;
+  }
+  .hamburgerMenuDark1 {
+    display: flex;
+    right: -50px;
+  }
+}
